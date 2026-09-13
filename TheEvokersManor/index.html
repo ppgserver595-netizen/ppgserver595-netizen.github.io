@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101211"><title>PPG Server ACT Ⅱ | The Evokers Manor</title>
+<meta name="description" content="あなたのもとに、洋館から一通の招待状が届いた。PPG Server ACT Ⅱ — The Evokers Manor. Coming soon...">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23101211' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23973539' d='M8 4h16v4h4v16h-4v4H8v-4H4V8h4z'/%3E%3Cpath fill='%23e7d9b4' d='M12 9h10v3h-7v3h6v3h-6v3h7v3H12z'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<header><a class="brand" href="./" aria-label="最初から見る">PPG <span>SERVER</span></a><span class="edition">ACT Ⅱ <i></i> THE EVOKERS MANOR</span></header>
+<div class="sound-bar"><button id="sound" type="button" aria-pressed="false" aria-label="BGMを再生">BGM OFF</button><span id="sound-hint">封を切ると音楽が流れます</span></div>
+<audio id="bgm" src="music-box.mp3" loop preload="none"></audio>
+<main>
+<section id="arrival" class="scene arrival" aria-labelledby="arrival-title">
+<div class="eyebrow"><span class="tiny-square"></span> YOU HAVE BEEN INVITED</div>
+<h1 id="arrival-title">洋館から、招待状が届いた。</h1>
+<p class="intro">差出人の名は、記されていない。</p>
+<button id="open" class="envelope" aria-label="封を切って招待状を開く"><img src="envelope.png" alt="赤い封蝋で閉じられた、ピクセルアートの招待状" width="1536" height="1024"><span class="open-label">封を切る <span aria-hidden="true">＋</span></span></button>
+<p class="whisper">一通の手紙が、長い夜の始まりを告げる。</p>
+</section>
+<section id="invitation" class="scene invitation" hidden aria-labelledby="letter-title">
+<div class="eyebrow">A LETTER FROM THE MANOR</div>
+<article class="letter">
+<div class="letter-top"><span>PPG SERVER</span><span>ACT Ⅱ</span></div>
+<p class="letter-kicker">INVITATION</p>
+<h2 id="letter-title" tabindex="-1">The Evokers<br>Manor</h2>
+<p class="development-note">PPG鯖　第二部　鋭意制作中</p>
+<div class="rule"><span>◆</span></div>
+<div class="letter-body"><p>この手紙を受け取った、あなたへ。</p><p>森の奥に佇む洋館にて、<br>あなたの訪れをお待ちしております。</p><p>夜が明ける前に、<br>どうぞ扉をお叩きください。</p></div>
+<p class="signature">── 洋館の主</p>
+<div class="accept-area"><button id="accept" class="accept">招待を受ける <span aria-hidden="true">＋</span></button><span id="stamp" class="stamp" hidden aria-label="招待受諾のハンコ">INVITATION<br><strong>ACCEPTED</strong><span>招 待 受 諾</span></span></div>
+</article>
+<p class="whisper">その扉の先で、お会いしましょう。</p>
+</section>
+<section id="ending" class="scene ending" hidden aria-labelledby="end-title">
+<div class="eyebrow">YOUR INVITATION HAS BEEN ACCEPTED</div>
+<div class="act-label">PPG SERVER <span>ACT Ⅱ</span></div>
+<h2 id="end-title" tabindex="-1">The Evokers<br><span>Manor</span></h2>
+<div class="end-stamp" aria-label="招待受諾">ACCEPTED</div>
+<p class="coming">Coming soon<span class="dots">...</span></p>
+<p class="end-copy">長い夜が、まもなく始まる。</p>
+<button id="replay" class="replay">招待状をもう一度読む</button>
+</section>
+<div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+</main>
+<footer><span>MINECRAFT ADVENTURE MAP</span><span class="developers">Developed by <strong>kokuko ＆ wanpi</strong></span><span>PPG SERVER <b>©</b> ACT Ⅱ</span></footer>
+<script src="weather.js?v=2"></script>
+<script src="app.js?v=2"></script>
+</body></html>
